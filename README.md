@@ -1,2 +1,3 @@
-# netflix-clone
-Desafio de código DIO Bootcamp Carrefour Web Developer
+# Netflix-Clone🎞
+
+Desafio de código DIO Bootcamp Carrefour Web Developer.
