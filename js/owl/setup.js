@@ -14,3 +14,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function toggle(){
+    let trailer = document.querySelector(".trailer")
+    trailer.classList.toggle("active")
+}

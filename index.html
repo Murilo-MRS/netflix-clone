@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <!-- responsividade -->
+    <link rel="stylesheet" href="/css/responsive.css">
+ 
     <!-- arquivos owl css -->
     <link rel="stylesheet" href="/css/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css">
@@ -16,25 +19,25 @@
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#inicio">Início</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#documentarios">Documentários</a>
             </nav>
         </div>    
     </header>
 
     <main>
-        <div class="filme-principal">
+        <div id="inicio" class="filme-principal">
             <div class="container">
                 <h3 class="titulo">BATMAN</h3>
                 <p class="descricao">Após dois anos espreitando as ruas como Batman e aterrorizando o mundo do crime, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com pouquíssimos aliados confiáveis dentro da rede corrupta de autoridades e grandes figuras da cidade, o vigilante solitário se estabeleceu como a personificação da vingança para a população.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button href="#" role="button" class="botao" onclick="toggle()">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="myBtn">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -42,61 +45,100 @@
             </div>
         </div>
     </main>
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="img/aranhaverso1.jpg" alt="Homem aranha no aranhaverso" srcset="">
+    <div class="carroseis">
+        <div id="filmes" class="carrosel-filmes">
+            <h1>Filmes</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/aranhaverso1.jpg" alt="Homem aranha no aranhaverso" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/animais-fantasticos.jpg" alt="animais fantasticos 3" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/batman.jpg" alt="batman 2022" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/dark-knight.jpg" alt="Batman: cavaleiro das trevas" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/eternos.jpg" alt="Eternos" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/morbius.jpg" alt="Morbius" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/thor4.jpg" alt="Thor Love and thunder" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/venom2.jpg" alt="Venom 2" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/spider-man.jpg" alt="Homem aranha sem volta pra casa" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/shang-chi.jpg" alt="Shang-chi" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/sonic1.jpg" alt="Sonic" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/sonic2.jpg" alt="Sonic 2" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/senhordosaneis3.jpg" alt="Senhor dos anéis eo Retorno do rei" srcset="">
+                </div>            
             </div>
-            <div class="item">
-                <img class="box-filme" src="img/animais-fantasticos.jpg" alt="animais fantasticos 3" srcset="">
+        </div>
+        <div id="series" class="carrosel-series">
+            <h1>Séries</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-serie" src="img/serie-bettercall.jpg" alt="bettercall" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-serie" src="img/serie-got.jpg" alt="got" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-serie" src="img/serie-loki.jpg" alt="loki" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-serie" src="img/serie-moonknight.jpg" alt="moonknight" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-serie" src="img/serie-theboys.jpg" alt="theboys" srcset="">
+                </div>          
             </div>
-            <div class="item">
-                <img class="box-filme" src="img/batman.jpg" alt="batman 2022" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/dark-knight.jpg" alt="Batman: cavaleiro das trevas" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/eternos.jpg" alt="Eternos" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/morbius.jpg" alt="Morbius" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/thor4.jpg" alt="Thor Love and thunder" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/venom2.jpg" alt="Venom 2" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/spider-man.jpg" alt="Homem aranha sem volta pra casa" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/shang-chi.jpg" alt="Shang-chi" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/sonic1.jpg" alt="Sonic" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/sonic2.jpg" alt="Sonic 2" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/senhordosaneis3.jpg" alt="Senhor dos anéis eo Retorno do rei" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/pulp-fiction.jpg" alt="Pulp Fiction" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/psicose.jpg" alt="Psicose" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/poderoso-chefao1.jpg" alt="Poderoso Chefão" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/poderoso-chefao2.jpg" alt="Poderoso Chefão Part. 2" srcset="">
+        </div>
+        <div id="documentarios" class="carrosel-documentarios">
+            <h1>Documentários</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc1.jpg" alt="doc1" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc2.jpg" alt="doc2" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc3.jpg" alt="doc3" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc4.jpg" alt="doc4" srcset="">
+                </div>          
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc5.jpg" alt="doc5" srcset="">
+                </div>          
+                <div class="item">
+                    <img class="box-documentarios" src="img/doc6.jpg" alt="doc6" srcset="">
+                </div>          
             </div>
         </div>
     </div>
+
+    <div class="trailer">
+        <i class="fa-solid fa-xmark close" onclick="toggle()"></i>
+        <iframe controls="true" width="1223" height="480" src="https://www.youtube.com/embed/eXsAkkPGHho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>     
     <script src="https://kit.fontawesome.com/973dc71bef.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>

@@ -45,7 +45,7 @@ header nav a:hover {
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/capa-batman.jpg');
-    height: 800px;
+    height: 500px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -97,4 +97,109 @@ header nav a:hover {
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 10px;
+}
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.box-documentarios{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carroseis{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+}
+
+.carrosel-filmes{
+    margin-bottom: 40px;
+}
+.carrosel-series{
+    margin-bottom: 40px;
+}
+.carrosel-documentarios{
+    margin-bottom: 40px;
+}
+
+.carrosel-filmes h1{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.carrosel-series h1{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.carrosel-documentarios h1{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+/* trailer pop-up */
+.trailer {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer iframe {
+    position:relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+    color: black;
+}
+/* pop de infos */
+
+.trailer {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
 }
